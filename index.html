@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani- Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(17, 17, 97, 0.425);
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(4, 17, 90, 0.562);
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            
+        }
+        nav ul li {
+            list-style: none;;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(29, 5, 75);
+            text-transform: uppercase;
+            font-size: 1.04 rem;
+        }
+        .left{
+            font-size: 2rem;
+
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 35px 0;
+           }
+
+        .firstSection  > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            
+         width: 80%;
+           font-size: 2.50rem;
+          
+       }
+
+        .rightsection img{
+            width: 150%;
+           margin: 30px 0;
+        }
+        .purple{
+            color: rgb(49, 22, 165);
+        }
+        a.active,a:hover{
+            background-color: rgba(84, 8, 206, 0.801) ;
+            transition: .5s;
+        }
+        nav ul li a:hover{
+            font-size: 1.4rem;
+        }
+        #element{
+            color: rgb(49, 22, 165);
+
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            font-size: 1.60rem;
+
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(4, 17, 90, 0.562) ;
+            height: 3px;
+            margin: 40px 84px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Shivani's Portofolio</b></div>
+            <div class="right"><ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Skills</a></li>
+                <li><a href="/">Education</a></li>
+                <li><a href="/">Experiences</a></li>
+                <li><a href="/"> Projects</a></li>
+                <li><a href="/">Contact</a></li>
+               
+            </ul></div>
+        </nav>
+    </header>
+<main>
+    <section class="firstSection">
+        <div class="leftsection">
+            Hi, My name is <span class="purple"><b>Shivani Sahu</b></span>
+         
+        <div> And I am a passionate</div>
+         
+        <div>Web Developer</div>
+        <span id="element"></span>
+        
+        </div>
+        <div class="rightsection">
+            <img src="pg.png" alt="">
+        </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>About</h1>
+    
+                <p>Some text about who we are and what we do.</p>
+                <p>Resize the browser window to see that this page is responsive by the way.</p>
+              
+        </section>
+</main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Software Developer', 'Video Editor'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+
+</html>
